@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="block-1">
+      <h1>welcome!!</h1>
+      <p>Lorem, ipsum.</p>
+      <p>name is <span id="marked"></span></p>
+    </div>
+    <div id="block-2">
+      <h1>hello!!</h1>
+    </div>
+    <script>
+      const x = document.getElementById("marked");
+      x.innerText = "nazi";
+      x.style.color = "red";
+      const y = document.getElementById("block-2");
+      y.remove();
+    </script>
+  </body>
+</html>
+
+<!--
+    In this HTML document, two `<div>` elements are present: "block-1" and "block-2". Using JavaScript:
+
+1. The text content of the `<span>` element with id "marked" inside "block-1" is changed to "nazi".
+2. The text color of the same `<span>` element is set to red.
+3. The entire "block-2" `<div>` is removed from the document.
+-->

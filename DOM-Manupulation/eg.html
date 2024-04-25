@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="class">
+      <h1>hello!!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+        exercitationem vitae sequi corporis quisquam deserunt. Aspernatur, dolor
+        enim delectus recusandae odit reprehenderit. Obcaecati officiis,
+        recusandae fugit eveniet unde pariatur tenetur! Modi tempora voluptates,
+        voluptatum facilis amet quidem accusantium minus temporibus aliquam ex
+        laudantium ratione exercitationem ullam corrupti, rerum beatae delectus
+        necessitatibus earum. Veniam exercitationem culpa animi soluta vel
+        doloribus sit. Nihil magnam, itaque porro rem eaque hic deserunt, sit
+        iste eum quis alias recusandae inventore est amet? Consequuntur itaque
+        delectus, inventore odio animi aut dicta ratione quis maiores in saepe.
+        Delectus, at laudantium excepturi nostrum voluptate culpa, ut provident
+        illum deleniti voluptates numquam! Soluta, ipsa quasi voluptas est ex,
+        sapiente quae in, a quia perferendis facere quam quidem rem quis?
+      </p>
+    </div>
+    <div class="class">
+      <h5>bye!!</h5>
+    </div>
+    <script>
+      const x = document.querySelectorAll(".class");
+      x.forEach((e) => {
+        console.log(e.innerHTML);
+      });
+
+      console.log(document.body);
+    </script>
+  </body>
+</html>
+
+<!--
+    This HTML code defines a simple webpage containing two `<div>` elements with the class attribute set to "class". Inside the first `<div>`, there's an `<h1>` heading element with the text "hello!!" and a `<p>` paragraph element with lorem ipsum text. The second `<div>` contains an `<h5>` heading element with the text "bye!!". 
+
+In the embedded JavaScript code, `querySelectorAll(".class")` selects all elements with the class "class". Then, a forEach loop iterates over these elements, logging each element's innerHTML to the console. This will log the HTML content inside each selected `<div>`. Finally, `console.log(document.body)` logs the entire `<body>` element of the document to the console.
+-->

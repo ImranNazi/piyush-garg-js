@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>hello</h1>
+    </div>
+    <div id="test">
+      <h1>bye</h1>
+    </div>
+    <script>
+      const div = document.querySelector("div");
+      div.innerHTML = "<h2>welcome!!</h2>";
+    </script>
+  </body>
+</html>
+
+<!--
+    So, when the script is executed, it finds the first <div> element in the document, and replaces its content with a new <h2> element, effectively changing the text displayed on the webpage from "hello" to "welcome!!".
+
+-->

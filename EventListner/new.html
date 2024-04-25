@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="marked">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta?
+    </p>
+    <button id="clickMe">click here</button>
+    <script>
+      const x = document.getElementById("clickMe");
+      const y = document.getElementById("marked");
+      x.addEventListener("click", () => {
+        if (y.style.color === "red") {
+          y.style.color = "blue";
+        } else {
+          y.style.color = "red";
+        }
+      });
+    </script>
+  </body>
+</html>

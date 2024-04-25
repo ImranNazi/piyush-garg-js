@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*red is a class , so we used classList in js..*/
+      .red {
+        color: red;
+      }
+      .blue {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ele">
+      <h1>welcome!!</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>my name is <span id="mark"></span></p>
+    </div>
+    <div class="ele">
+      <h5 id="target" class="blue">bye!!!</h5>
+    </div>
+
+    <script>
+      const x = document.getElementById("mark");
+      x.innerText = "nazi";
+      x.classList.add("red");
+      const y = document.getElementById("target");
+      y.classList.add("blue");
+      y.parentElement.style.background = "grey";
+      console.log(y.parentElement);
+      //   console.log(y.parentNode);
+    </script>
+  </body>
+</html>
+
+<!--
+  In this HTML document:
+
+- Two `<div>` elements with the class "ele" are present.
+- Inside the first `<div>`, there's an empty `<span>` element with the id "mark".
+- Inside the second `<div>`, there's an `<h5>` heading element with the text "bye!!!" and the class "blue".
+
+Using JavaScript:
+
+1. The text content of the `<span>` element with id "mark" is set to "nazi".
+2. The "red" class is added to the `<span>` element, changing its text color to red.
+3. The "blue" class is added to the `<h5>` element with id "target", changing its text color to aqua.
+4. The background color of the `<div>` containing the `<h5>` element is set to grey.
+
+Finally, the parent element of the `<h5>` element (its containing `<div>`) is logged to the console.
+-->

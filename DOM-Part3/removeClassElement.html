@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="block">
+      <nav>hello!!</nav>
+    </div>
+    <div class="block">
+      <h1>welcome</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="block">
+      <p>bye!!</p>
+    </div>
+    <div class="removed">
+      <p>exit!!!!</p>
+    </div>
+    <script>
+      const x = document.getElementsByClassName("removed");
+      for (let i = 0; i < x.length; i++) {
+        x.item(i).remove();
+      }
+    </script>
+  </body>
+</html>

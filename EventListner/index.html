@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="para">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+    <button id="clickButton">click here</button>
+    <script>
+      const x = document.getElementById("clickButton");
+      x.addEventListener("click", () => {
+        console.log("hey!!");
+      });
+      //to make text color change on click of button!!!
+      const y = document.getElementById("para");
+      x.addEventListener("click", () => {
+        y.style.background = "red";
+      });
+    </script>
+  </body>
+</html>
