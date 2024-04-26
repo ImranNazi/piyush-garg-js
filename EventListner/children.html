@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="block">
+      <nav>welcome!!</nav>
+    </div>
+    <div class="block">
+      <h1>hello!!!!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam!</p>
+    </div>
+    <div class="block">
+      <p>exit.</p>
+    </div>
+    <script>
+      const allChildren = document.querySelector("body").children;
+      for (let i = 0; i < allChildren.length; i++) {
+        allChildren.item(i).addEventListener("click", () => {
+          allChildren.item(i).remove();
+        });
+      }
+    </script>
+  </body>
+</html>
+
+<!--
+    const allChildren = document.querySelector("body").children;: This line selects all direct children of the body element and stores them in the variable allChildren.
+for (let i = 0; i < allChildren.length; i++) { ... }: This loop iterates over each child element.
+allChildren.item(i).addEventListener("click", () => { ... });: This line adds a click event listener to each child element.
+allChildren.item(i).remove();: When a child element is clicked, it is removed from the DOM.
+So, each block of content is clickable, and when clicked, it disappears from the page
+-->
