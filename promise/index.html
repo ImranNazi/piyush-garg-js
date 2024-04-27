@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function getData() {
+        let url = await fetch(
+          "https://api.weatherapi.com/v1/current.json?key=4751a3c0a9ff4304ade74346242604&q=London&aqi=yes"
+        );
+        console.log(await url.json());
+      }
+      getData();
+    </script>
+  </body>
+</html>
+<!--
+    async function getData(): This line declares an asynchronous function named getData(). The async keyword is used to define a function that will operate asynchronously, meaning it won't block the execution of other code while it's running. Asynchronous functions can contain await expressions.
+let url = await fetch(...): Inside the getData() function, there's an await expression used with the fetch() function. The fetch() function is used to make an HTTP request to the specified URL ("https://api.weatherapi.com/v1/current.json..."). By using await, the execution of the getData() function will pause until the fetch() operation is completed and a response is received. The response is stored in the url variable.
+console.log(url): Once the fetch() operation is completed and the response is received, the code resumes execution, and the response (typically a Response object) is logged to the console using console.log().
+getData(): Finally, the getData() function is called, initiating the asynchronous operation.
+In summary, this code asynchronously fetches data from the specified URL using the Fetch API. The async and await keywords are used to work with promises in a more synchronous-like manner, making the code easier to read and maintain.
+-->

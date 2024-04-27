@@ -1,0 +1,1 @@
+Promises in JavaScript represent the outcome of asynchronous operations. They are created with `new Promise(executor)` where `executor` is a function with `resolve` and `reject` parameters. Promises are consumed using `then()` for handling successful outcomes and `catch()` for errors.
